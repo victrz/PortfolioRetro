@@ -1,5 +1,4 @@
 @import url('normalize.css');
-/*@import url('noscript.css');*/
 @import url('demo.css');
 
 @font-face {
@@ -13,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 #contact{
   min-height: 30vh;
 }
@@ -138,7 +138,46 @@
 	font-weight: 200;
 }
 
-.ps-content a:last-child {
+.ps-content .view{
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 4px;
+  float: right;
+  border: 3px solid #555;
+  padding: 3px;
+  text-indent: 4px;
+}
+.no-touch .ps-content .view:hover {
+	color: #b2d79d;
+	border-color: #b2d79d;
+}
+.ps-content .view:before {
+	content: '';
+	font-family: 'icon';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	padding-right: 5px;
+}
+a.gitlink:link{
+  color: white;
+  text-decoration: none;
+}
+a.gitlink:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a.gitlink:hover{
+  color: white;
+  text-decoration: none;
+}
+a.gitlink:active{
+  color: white;
+  text-decoration: none;
+}
+/*.ps-content a:last-child {
 	font-size: 14px;
 	font-weight: 700;
 	color: #555;
@@ -147,21 +186,21 @@
 	border: 3px solid #555;
 	padding: 3px;
 	text-indent: 4px;
-}
+}*/
 
-.no-touch .ps-content a:last-child:hover {
+/*.no-touch .ps-content a:last-child:hover {
 	color: #b2d79d;
 	border-color: #b2d79d;
-}
+}*/
 
-.ps-content a:last-child:before {
+/*.ps-content a:last-child:before {
 	content: '';
 	font-family: 'icon';
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
 	padding-right: 5px;
-}
+}*/
 
 .ps-slidewrapper {
 	right: 0px;
@@ -328,7 +367,7 @@
 		overflow-y: scroll;
 	}
 
-	.js .ps-content a:last-child {
+	.js .ps-content .view {
 		font-size: 13px;
 		margin: 10px 20px 0 0;
 	}
